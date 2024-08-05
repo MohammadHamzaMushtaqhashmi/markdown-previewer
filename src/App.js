@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import {marked} from 'marked';
-import './App.css'; // Ensure you have styles for the headers
+import './App.css'; 
+
+marked.setOptions({
+  breaks: true, 
+});
 
 const App = () => {
   const [markdown, setMarkdown] = useState(`# Welcome to Markdown Previewer
